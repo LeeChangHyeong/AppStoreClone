@@ -8,26 +8,31 @@
 import SwiftUI
 
 struct AppViewTopView: View {
+    var firstText: String
+    var secondText: String
+    var title: String
+    var image: String
     var body: some View {
-        VStack{
+        VStack {
             Divider()
-            Text("지금 참여 가능")
+                .background(Color(.systemGray))
+            Text(firstText)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text("디즈니+")
+                .font(.caption2)
+                .foregroundColor(Color(.systemBlue))
+            Text(secondText)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text("닥터 스트레인지: 대혼돈의 멀티버스")
-                .frame(maxWidth:.infinity, alignment: .leading)
-            Image("IMG_1157")
-                .frame(maxWidth:.infinity)
+                .font(.title2)
+            Text(title)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.title3)
+                .foregroundColor(Color(.systemGray))
+            Image(image)
+                .resizable()
+                .scaledToFill()
+                .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/4)
                 .background(.black)
-                .cornerRadius(20)
+                .cornerRadius(10)
         }
-        .padding()
-    }
-}
-
-struct AppViewTopView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppViewTopView()
     }
 }

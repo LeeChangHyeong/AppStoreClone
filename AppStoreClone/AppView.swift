@@ -9,26 +9,37 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        ScrollView() {
-            HStack {
-                Text("앱")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding()
-                Spacer()
-                Image(systemName: "person.crop.circle")
-                    .font(.largeTitle)
-                    .padding()
+        //        NavigationView {
+        //
+        //            Form {
+        //
+        //            }
+        //            .navigationTitle("SwiftUI")
+        //        }
+        NavigationView{
+            ScrollView() {
+                ScrollView(.horizontal) {
+                    HStack {
+                        AppViewTopView(firstText: "같이 즐겨요", secondText: "2022년 최고의 영화", title: "더 배트맨", image: "batman")
+                            .padding(.horizontal)
+                        AppViewTopView(firstText: "같이 즐겨요", secondText: "2022년 최고의 영화", title: "더 배트맨", image: "batman")
+//                        AppViewTopView()
+//                            .padding(.horizontal)
+//                        AppViewTopView()
+//                        AppViewTopView()
+//                            .padding(.horizontal)
+//                        AppViewTopView()
+//                        AppViewTopView()
+//                            .padding(.horizontal)
+                    }
+                }
             }
-            ScrollView(.horizontal) {
-                HStack {
-                    AppViewTopView()
-                    AppViewTopView()
-                    AppViewTopView()
-                    AppViewTopView()
-                    AppViewTopView()
-                    AppViewTopView()
-                    AppViewTopView()
+            .navigationTitle("앱")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: ContentView()) {
+                        Image(systemName: "person.crop.circle").font(.title)
+                    }
                 }
             }
         }

@@ -14,6 +14,8 @@
 		328004B72862132C000658FD /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004B62862132C000658FD /* AppView.swift */; };
 		328004BA286220CF000658FD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 328004B9286220CF000658FD /* .swiftlint.yml */; };
 		328004BC286488F4000658FD /* AppViewTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BB286488F4000658FD /* AppViewTopView.swift */; };
+		328004BE28649373000658FD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BD28649373000658FD /* GameView.swift */; };
+		328004C02864A886000658FD /* AppViewFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BF2864A886000658FD /* AppViewFullScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		328004B62862132C000658FD /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		328004B9286220CF000658FD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		328004BB286488F4000658FD /* AppViewTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewTopView.swift; sourceTree = "<group>"; };
+		328004BD28649373000658FD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		328004BF2864A886000658FD /* AppViewFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFullScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				328004AA28621222000658FD /* ContentView.swift */,
 				328004B62862132C000658FD /* AppView.swift */,
 				328004BB286488F4000658FD /* AppViewTopView.swift */,
+				328004BF2864A886000658FD /* AppViewFullScreenView.swift */,
+				328004BD28649373000658FD /* GameView.swift */,
 				328004AC28621223000658FD /* Assets.xcassets */,
 				328004AE28621223000658FD /* Preview Content */,
 			);
@@ -172,6 +178,8 @@
 				328004AB28621222000658FD /* ContentView.swift in Sources */,
 				328004BC286488F4000658FD /* AppViewTopView.swift in Sources */,
 				328004A928621222000658FD /* AppStoreCloneApp.swift in Sources */,
+				328004BE28649373000658FD /* GameView.swift in Sources */,
+				328004C02864A886000658FD /* AppViewFullScreenView.swift in Sources */,
 				328004B72862132C000658FD /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
