@@ -11,6 +11,9 @@
 		328004AB28621222000658FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004AA28621222000658FD /* ContentView.swift */; };
 		328004AD28621223000658FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328004AC28621223000658FD /* Assets.xcassets */; };
 		328004B028621223000658FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328004AF28621223000658FD /* Preview Assets.xcassets */; };
+		328004B72862132C000658FD /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004B62862132C000658FD /* AppView.swift */; };
+		328004BA286220CF000658FD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 328004B9286220CF000658FD /* .swiftlint.yml */; };
+		328004BC286488F4000658FD /* AppViewTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BB286488F4000658FD /* AppViewTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		328004AA28621222000658FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		328004AC28621223000658FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328004AF28621223000658FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		328004B62862132C000658FD /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		328004B9286220CF000658FD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		328004BB286488F4000658FD /* AppViewTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 		3280049C28621222000658FD = {
 			isa = PBXGroup;
 			children = (
+				328004B9286220CF000658FD /* .swiftlint.yml */,
 				328004A728621222000658FD /* AppStoreClone */,
 				328004A628621222000658FD /* Products */,
 			);
@@ -53,6 +60,8 @@
 			children = (
 				328004A828621222000658FD /* AppStoreCloneApp.swift */,
 				328004AA28621222000658FD /* ContentView.swift */,
+				328004B62862132C000658FD /* AppView.swift */,
+				328004BB286488F4000658FD /* AppViewTopView.swift */,
 				328004AC28621223000658FD /* Assets.xcassets */,
 				328004AE28621223000658FD /* Preview Content */,
 			);
@@ -74,6 +83,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 328004B328621223000658FD /* Build configuration list for PBXNativeTarget "AppStoreClone" */;
 			buildPhases = (
+				328004B828621EAB000658FD /* SwiftLint Script */,
 				328004A128621222000658FD /* Sources */,
 				328004A228621222000658FD /* Frameworks */,
 				328004A328621222000658FD /* Resources */,
@@ -125,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328004BA286220CF000658FD /* .swiftlint.yml in Resources */,
 				328004B028621223000658FD /* Preview Assets.xcassets in Resources */,
 				328004AD28621223000658FD /* Assets.xcassets in Resources */,
 			);
@@ -132,13 +143,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		328004B828621EAB000658FD /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		328004A128621222000658FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				328004AB28621222000658FD /* ContentView.swift in Sources */,
+				328004BC286488F4000658FD /* AppViewTopView.swift in Sources */,
 				328004A928621222000658FD /* AppStoreCloneApp.swift in Sources */,
+				328004B72862132C000658FD /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
