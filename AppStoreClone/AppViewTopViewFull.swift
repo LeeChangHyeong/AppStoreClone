@@ -12,6 +12,7 @@ struct AppViewTopView: View {
     var secondText: String
     var title: String
     var image: String
+    @State var isTouch = false
     var body: some View {
         VStack {
             Divider()
@@ -33,6 +34,12 @@ struct AppViewTopView: View {
                 .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/4)
                 .background(.black)
                 .cornerRadius(10)
+                .onTapGesture {
+                    isTouch.toggle()
+                }
+                .fullScreenCover(isPresented: $isTouch, content: {
+                                    AppViewFullScreenView()
+                                })
         }
     }
 }
