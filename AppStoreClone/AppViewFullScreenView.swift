@@ -11,29 +11,31 @@ struct AppViewFullScreenView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ScrollView {
-            ZStack {
+            VStack{
+                ZStack {
+                    Image("batmanMain")
+                        .resizable()
+                        .frame(height: UIScreen.main.bounds.height/1.8)
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.title)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                        .padding()
+                        .onTapGesture {
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                }
+                .statusBar(hidden: true)
+                Text("안녕하세요")
+                Text("안녕하세요")
+                Text("안녕하세요")
+                Text("안녕하세요")
+                Text("안녕하세요")
+                Text("안녕하세요")
+                Text("안녕하세요")
                 Image("batmanMain")
                     .resizable()
                     .frame(height: UIScreen.main.bounds.height/1.8)
-                Image(systemName: "xmark.circle.fill")
-                    .font(.title)
-                    .frame(maxWidth:.infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .padding()
-                    .onTapGesture {
-                        presentationMode.wrappedValue.dismiss()
-                    }
             }
-            .statusBar(hidden: true)
-                Text("안녕하세요")
-                Text("안녕하세요")
-                Text("안녕하세요")
-                Text("안녕하세요")
-                Text("안녕하세요")
-                Text("안녕하세요")
-                Text("안녕하세요")
-                Image("batmanMain")
-                    .resizable()
-                    .frame(height: UIScreen.main.bounds.height/1.8)
         }
         .ignoresSafeArea()
     }

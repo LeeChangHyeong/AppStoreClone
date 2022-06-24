@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321589EB2865BC65009188E7 /* FancyScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 321589EA2865BC65009188E7 /* FancyScrollView */; };
 		328004A928621222000658FD /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004A828621222000658FD /* AppStoreCloneApp.swift */; };
 		328004AB28621222000658FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004AA28621222000658FD /* ContentView.swift */; };
 		328004AD28621223000658FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328004AC28621223000658FD /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321589EB2865BC65009188E7 /* FancyScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +104,9 @@
 			dependencies = (
 			);
 			name = AppStoreClone;
+			packageProductDependencies = (
+				321589EA2865BC65009188E7 /* FancyScrollView */,
+			);
 			productName = AppStoreClone;
 			productReference = 328004A528621222000658FD /* AppStoreClone.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 3280049C28621222000658FD;
+			packageReferences = (
+				321589E92865BC65009188E7 /* XCRemoteSwiftPackageReference "FancyScrollView" */,
+			);
 			productRefGroup = 328004A628621222000658FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		321589E92865BC65009188E7 /* XCRemoteSwiftPackageReference "FancyScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nerdsupremacist/FancyScrollView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		321589EA2865BC65009188E7 /* FancyScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 321589E92865BC65009188E7 /* XCRemoteSwiftPackageReference "FancyScrollView" */;
+			productName = FancyScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3280049D28621222000658FD /* Project object */;
 }

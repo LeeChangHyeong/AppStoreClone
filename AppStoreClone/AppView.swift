@@ -9,29 +9,19 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        //        NavigationView {
-        //
-        //            Form {
-        //
-        //            }
-        //            .navigationTitle("SwiftUI")
-        //        }
-        NavigationView{
+        NavigationView {
             ScrollView() {
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         AppViewTopView(firstText: "같이 즐겨요", secondText: "2022년 최고의 영화", title: "더 배트맨", image: "batman")
-                            .padding(.horizontal)
+                            
+                            
                         AppViewTopView(firstText: "같이 즐겨요", secondText: "2022년 최고의 영화", title: "더 배트맨", image: "batman")
-//                        AppViewTopView()
-//                            .padding(.horizontal)
-//                        AppViewTopView()
-//                        AppViewTopView()
-//                            .padding(.horizontal)
-//                        AppViewTopView()
-//                        AppViewTopView()
-//                            .padding(.horizontal)
-                    }
+                        AppViewTopView(firstText: "같이 즐겨요", secondText: "2022년 최고의 영화", title: "더 배트맨", image: "batman")
+                            
+                        AppViewTopView(firstText: "같이 즐겨요", secondText: "2022년 최고의 영화", title: "더 배트맨", image: "batman")
+                            
+                    }.padding(.horizontal)
                 }
             }
             .navigationTitle("앱")
