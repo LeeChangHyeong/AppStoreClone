@@ -11,12 +11,13 @@
 		32679BC228684931005A54D2 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32679BC128684931005A54D2 /* Today.swift */; };
 		32679BC528684A8D005A54D2 /* TodayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32679BC428684A8D005A54D2 /* TodayItem.swift */; };
 		32679BC728684B7F005A54D2 /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32679BC628684B7F005A54D2 /* TodayCardView.swift */; };
+		32679BC928684E07005A54D2 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32679BC828684E07005A54D2 /* Detail.swift */; };
+		32679BCB28684EC2005A54D2 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32679BCA28684EC2005A54D2 /* DetailViewModel.swift */; };
 		328004A928621222000658FD /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004A828621222000658FD /* AppStoreCloneApp.swift */; };
 		328004AB28621222000658FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004AA28621222000658FD /* ContentView.swift */; };
 		328004AD28621223000658FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328004AC28621223000658FD /* Assets.xcassets */; };
 		328004B028621223000658FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328004AF28621223000658FD /* Preview Assets.xcassets */; };
 		328004B72862132C000658FD /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004B62862132C000658FD /* AppView.swift */; };
-		328004BA286220CF000658FD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 328004B9286220CF000658FD /* .swiftlint.yml */; };
 		328004BC286488F4000658FD /* AppViewTopViewFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BB286488F4000658FD /* AppViewTopViewFull.swift */; };
 		328004BE28649373000658FD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BD28649373000658FD /* GameView.swift */; };
 		328004C02864A886000658FD /* AppViewFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328004BF2864A886000658FD /* AppViewFullScreenView.swift */; };
@@ -28,13 +29,14 @@
 		32679BC128684931005A54D2 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		32679BC428684A8D005A54D2 /* TodayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayItem.swift; sourceTree = "<group>"; };
 		32679BC628684B7F005A54D2 /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
+		32679BC828684E07005A54D2 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		32679BCA28684EC2005A54D2 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		328004A528621222000658FD /* AppStoreClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328004A828621222000658FD /* AppStoreCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneApp.swift; sourceTree = "<group>"; };
 		328004AA28621222000658FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		328004AC28621223000658FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328004AF28621223000658FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		328004B62862132C000658FD /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		328004B9286220CF000658FD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		328004BB286488F4000658FD /* AppViewTopViewFull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewTopViewFull.swift; sourceTree = "<group>"; };
 		328004BD28649373000658FD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		328004BF2864A886000658FD /* AppViewFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFullScreenView.swift; sourceTree = "<group>"; };
@@ -65,7 +67,6 @@
 		3280049C28621222000658FD = {
 			isa = PBXGroup;
 			children = (
-				328004B9286220CF000658FD /* .swiftlint.yml */,
 				328004A728621222000658FD /* AppStoreClone */,
 				328004A628621222000658FD /* Products */,
 			);
@@ -90,6 +91,8 @@
 				328004C12864BA0C000658FD /* AppViewTopViewNav.swift */,
 				32679BC628684B7F005A54D2 /* TodayCardView.swift */,
 				328004BF2864A886000658FD /* AppViewFullScreenView.swift */,
+				32679BC828684E07005A54D2 /* Detail.swift */,
+				32679BCA28684EC2005A54D2 /* DetailViewModel.swift */,
 				32BBE29328675FB600D173B6 /* AppListView.swift */,
 				328004BD28649373000658FD /* GameView.swift */,
 				328004AC28621223000658FD /* Assets.xcassets */,
@@ -114,7 +117,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 328004B328621223000658FD /* Build configuration list for PBXNativeTarget "AppStoreClone" */;
 			buildPhases = (
-				328004B828621EAB000658FD /* SwiftLint Script */,
 				328004A128621222000658FD /* Sources */,
 				328004A228621222000658FD /* Frameworks */,
 				328004A328621222000658FD /* Resources */,
@@ -172,34 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				328004BA286220CF000658FD /* .swiftlint.yml in Resources */,
 				328004B028621223000658FD /* Preview Assets.xcassets in Resources */,
 				328004AD28621223000658FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		328004B828621EAB000658FD /* SwiftLint Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftLint Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		328004A128621222000658FD /* Sources */ = {
@@ -208,12 +188,14 @@
 			files = (
 				328004C22864BA0C000658FD /* AppViewTopViewNav.swift in Sources */,
 				328004AB28621222000658FD /* ContentView.swift in Sources */,
+				32679BC928684E07005A54D2 /* Detail.swift in Sources */,
 				328004BC286488F4000658FD /* AppViewTopViewFull.swift in Sources */,
 				328004A928621222000658FD /* AppStoreCloneApp.swift in Sources */,
 				32679BC728684B7F005A54D2 /* TodayCardView.swift in Sources */,
 				32679BC228684931005A54D2 /* Today.swift in Sources */,
 				32BBE29428675FB600D173B6 /* AppListView.swift in Sources */,
 				32679BC528684A8D005A54D2 /* TodayItem.swift in Sources */,
+				32679BCB28684EC2005A54D2 /* DetailViewModel.swift in Sources */,
 				328004BE28649373000658FD /* GameView.swift in Sources */,
 				328004C02864A886000658FD /* AppViewFullScreenView.swift in Sources */,
 				328004B72862132C000658FD /* AppView.swift in Sources */,
