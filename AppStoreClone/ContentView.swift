@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView() {
-            Text("투데이")
+            Today()
                 .tabItem {
                     Image(systemName: "doc.text.image")
                     Text("투데이")

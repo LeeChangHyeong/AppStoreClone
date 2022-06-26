@@ -11,7 +11,7 @@ struct AppViewFullScreenView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ScrollView {
-            VStack{
+            VStack {
                 ZStack {
                     Image("batmanMain")
                         .resizable()
